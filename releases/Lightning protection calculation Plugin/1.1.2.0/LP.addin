@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Lightning Protection</Name>
+    <Assembly>"LP.dll"</Assembly>
+    <FullClassName>LP.Commands.App</FullClassName>
+    <AddInId>8D83B638-51E1-4F9D-9AF8-1234567890AB</AddInId>
+    <VendorId>VP</VendorId>
+    <VendorDescription>VoltikPRO</VendorDescription>
+  </AddIn>
+</RevitAddIns>
