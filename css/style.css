@@ -1,4 +1,4 @@
-/* Загальні стилі для сторінок */
+/* Загальні стилі */
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   margin: 0;
@@ -8,15 +8,15 @@ body {
   line-height: 1.6;
 }
 
-/* Хедер і футер */
+/* Header і Footer */
 header, footer {
-  text-align: center;
   padding: 20px 40px;
   background: #f8f8f8;
+  text-align: left;
 }
 
 header h1 {
-  margin: 0;
+  margin: 10px 0 0 0;
   font-size: 2em;
 }
 
@@ -26,12 +26,25 @@ header p {
   color: #666;
 }
 
-/* Основний контент сторінки плагіна */
+/* Логотип у верхньому лівому куті */
+header .btn-home {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+header .btn-home img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Основний контент */
 main {
   padding: 40px;
   max-width: 900px;
-  margin: auto; /* центр блоку на сторінці */
-  text-align: left; /* ліве вирівнювання */
+  margin: auto;
+  text-align: left;
 }
 
 section {
@@ -82,44 +95,25 @@ iframe {
   border-radius: 8px;
 }
 
-/* Каталог плагінів на головній сторінці */
+/* Каталог плагінів */
 .plugin-list {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column; /* вертикальний список */
   gap: 20px;
-  padding: 40px;
 }
 
 .plugin-card {
   border: 1px solid #eee;
   border-radius: 12px;
   padding: 20px;
-  width: 250px;
-  text-align: center; /* картки залишаються центрованими */
+  text-align: left; /* ліворуч */
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .plugin-card img {
   width: 80px;
-  margin-bottom: 10px;
-}
-.header-top {
-  text-align: left; /* вирівнювання ліворуч */
-  margin-bottom: 10px;
-}
-
-.btn-home {
-  display: inline-block;
-  padding: 6px 12px;
-  background: #000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 0.9em;
-  transition: background 0.3s;
-}
-
-.btn-home:hover {
-  background: #444;
+  flex-shrink: 0;
 }
