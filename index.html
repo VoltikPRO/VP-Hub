@@ -1,17 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>VP Hub</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoltikPRO Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 1rem 2rem;
+        }
+        main {
+            padding: 2rem;
+        }
+        .plugin {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .plugin h2 {
+            margin-top: 0;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #007acc;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+        }
+        .download-btn:hover {
+            background-color: #005fa3;
+        }
+        .changelog {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 0.5rem;
+        }
+    </style>
 </head>
 <body>
-  <h1>VoltikPRO Hub</h1>
-  <p>Welcome to VP plugin hub!</p>
-  <nav>
-    <a href="products/">Products</a> |
-    <a href="releases/">Releases</a> |
-    <a href="docs/">Docs</a> |
-    <a href="support/">Support</a>
-  </nav>
+
+<header>
+    <h1>VoltikPRO Hub</h1>
+    <p>Latest Revit plugins by VoltikPRO (VP)</p>
+</header>
+
+<main>
+
+    <!-- Plugin 1 -->
+    <div class="plugin">
+        <h2>WallTools</h2>
+        <p>Utility tools for managing walls in Revit.</p>
+        <a class="download-btn" href="releases/WallTools/VP-WallTools.zip" download>Download Latest</a>
+        <div class="changelog">
+            Latest changes: Improved wall selection, fixed minor bugs.
+        </div>
+    </div>
+
+    <!-- Plugin 2 -->
+    <div class="plugin">
+        <h2>RoofManager</h2>
+        <p>Advanced roof management tools for Revit.</p>
+        <a class="download-btn" href="releases/RoofManager/VP-RoofManager.zip" download>Download Latest</a>
+        <div class="changelog">
+            Latest changes: Added multi-slope support and UI improvements.
+        </div>
+    </div>
+
+    <!-- Plugin 3 -->
+    <div class="plugin">
+        <h2>SheetBatch</h2>
+        <p>Batch creation and modification of sheets in Revit.</p>
+        <a class="download-btn" href="releases/SheetBatch/VP-SheetBatch.zip" download>Download Latest</a>
+        <div class="changelog">
+            Latest changes: Faster batch processing and template selection added.
+        </div>
+    </div>
+
+    <!-- Додати інші плагіни тут за тим же шаблоном -->
+
+</main>
+
 </body>
 </html>
