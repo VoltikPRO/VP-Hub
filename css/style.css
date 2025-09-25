@@ -22,7 +22,41 @@ body {
 header, footer {
   background: #f8f8f8;
   padding: 20px 0;
-  text-align: center; /* вирівнюємо заголовки та текст по центру */
+  text-align: center;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* заголовок і підзаголовок по центру */
+}
+
+/* Home button контейнер */
+.header-top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; /* кнопка Home зліва */
+  margin-bottom: 10px;
+}
+
+.btn-home {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.1s;
+}
+
+.btn-home:hover {
+  background: #444;
+}
+
+.btn-home:active {
+  transform: scale(0.97);
 }
 
 header h1 {
@@ -37,8 +71,12 @@ header p {
   color: #666;
 }
 
+footer .container {
+  text-align: center;
+}
+
 footer p {
-  margin: 0;
+  margin: 5px 0 0 0;
   font-size: 0.9em;
   color: #888;
 }
