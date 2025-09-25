@@ -1,34 +1,28 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <title>VP-Hub – Плагіни для Revit</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <a class="btn-home" href="index.html">
-      <img src="media/logo.png" alt="VP-Hub Home" />
-    </a>
-    <h1>VP-Hub</h1>
-    <p>Каталог плагінів для Autodesk Revit</p>
-  </header>
-
-  <main>
-    <section class="plugin-list">
-      <div class="plugin-card">
-        <img src="plugins/vp-revit-plugin/media/icon.png" alt="VP Revit Plugin">
+<main>
+  <section class="plugin-list">
+    <!-- LP Revit Plugin -->
+    <div class="plugin-card">
+      <img src="plugins/vp-revit-plugin/media/icon.png" alt="LP Revit Plugin">
+      <div class="plugin-info">
         <h2>LP Revit Plugin</h2>
         <p>Lightning protection calculation</p>
-        <a class="btn" href="plugins/vp-revit-plugin/">Details</a>
-        <a class="btn" href="https://github.com/VoltikPRO/lp-revit-plugin-release/releases">Download</a>
+        <div class="plugin-buttons">
+          <a class="btn" href="plugins/vp-revit-plugin/">Details</a>
+          <a class="btn" href="https://github.com/VoltikPRO/lp-revit-plugin-release/releases">Download</a>
+        </div>
       </div>
-      <!-- Можна додати ще плагіни тут -->
-    </section>
-  </main>
+    </div>
 
-  <footer>
-    <p>© 2025 VP-Hub</p>
-  </footer>
-</body>
-</html>
+    <!-- Collision Check Plugin -->
+    <div class="plugin-card">
+      <img src="plugins/collision-check/media/icon.png" alt="Collision Check Plugin">
+      <div class="plugin-info">
+        <h2>СС Revit Plugin</h2>
+        <p>Collision сheck</p>
+        <div class="plugin-buttons">
+          <span class="btn disabled">Coming Soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
