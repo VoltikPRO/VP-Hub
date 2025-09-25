@@ -104,3 +104,22 @@ iframe {
   width: 80px;
   margin-bottom: 10px;
 }
+.header-top {
+  text-align: left; /* вирівнювання ліворуч */
+  margin-bottom: 10px;
+}
+
+.btn-home {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9em;
+  transition: background 0.3s;
+}
+
+.btn-home:hover {
+  background: #444;
+}
