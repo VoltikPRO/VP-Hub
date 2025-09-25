@@ -1,41 +1,69 @@
+/* Загальні стилі для сторінок */
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   margin: 0;
   padding: 0;
   background: #fff;
   color: #333;
+  line-height: 1.6;
 }
 
+/* Хедер і футер */
 header, footer {
   text-align: center;
-  padding: 20px;
+  padding: 20px 40px;
+  background: #f8f8f8;
 }
 
-.plugin-list {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header p {
+  margin: 5px 0 0 0;
+  font-size: 1em;
+  color: #666;
+}
+
+/* Основний контент сторінки плагіна */
+main {
   padding: 40px;
+  max-width: 900px;
+  margin: auto; /* центр блоку на сторінці */
+  text-align: left; /* ліве вирівнювання */
 }
 
-.plugin-card {
-  border: 1px solid #eee;
-  border-radius: 12px;
-  padding: 20px;
-  width: 250px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+section {
+  margin-bottom: 40px;
 }
 
-.plugin-card img {
-  width: 80px;
-  margin-bottom: 10px;
+section h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
 }
 
+section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+section a {
+  color: #0070c9;
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/* Кнопки */
 .btn {
   display: inline-block;
   margin-top: 10px;
-  padding: 10px 15px;
+  padding: 10px 20px;
   background: #000;
   color: #fff;
   text-decoration: none;
@@ -45,4 +73,34 @@ header, footer {
 
 .btn:hover {
   background: #444;
+}
+
+/* Відео */
+iframe {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Каталог плагінів на головній сторінці */
+.plugin-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+}
+
+.plugin-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  text-align: center; /* картки залишаються центрованими */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.plugin-card img {
+  width: 80px;
+  margin-bottom: 10px;
 }
