@@ -1,50 +1,56 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Встановлення VP Revit Plugin</title>
+  <title>Installation – LP Revit Plugin</title>
   <link rel="stylesheet" href="../../../css/style.css">
 </head>
 <body>
   <header>
-    <h1>Встановлення VP Revit Plugin</h1>
+    <div class="container">
+      <div class="header-top">
+        <a class="btn-home" href="../index.html">Back</a>
+      </div>
+      <h1>Installation</h1>
+      <p>How to install the LP Revit Plugin</p>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>Кроки встановлення</h2>
-      <ol>
-        <li>
-          Завантажте <b>останню версію плагіна</b> з 
-          <a href="https://github.com/YourOrg/vp-revit-plugin-release/releases/latest" target="_blank">
-            GitHub Releases
-          </a>.
-        </li>
-        <li>
-          Розпакуйте архів <code>.zip</code>.
-        </li>
-        <li>
-          Скопіюйте файли <code>.dll</code> та <code>.addin</code> у відповідну папку Revit:
-          <ul>
-            <li><code>%AppData%\Autodesk\Revit\Addins\[версія Revit]</code> (Windows)</li>
-          </ul>
-        </li>
-        <li>
-          Запустіть Revit — плагін з’явиться у стрічці інтерфейсу.
-        </li>
-      </ol>
-    </section>
+    <div class="container">
+      <section>
+        <h2>Steps</h2>
+        <ol>
+          <li>
+            Download the <b>latest version</b> of the plugin from  
+            <a href="https://github.com/VoltikPRO/lp-revit-plugin-release/releases">GitHub</a>.
+          </li>
+          <li>
+            Extract the <code>.zip</code> archive.
+          </li>
+          <li>
+            Copy the <code>.dll</code> and <code>.addin</code> files into your Revit Addins folder:
+            <ul>
+              <li><code>%AppData%\Autodesk\Revit\Addins\[Revit Version]</code></li>
+            </ul>
+          </li>
+          <li>
+            Start Revit – the plugin will appear in the ribbon.
+          </li>
+        </ol>
+      </section>
 
-    <section>
-      <h2>Примітка</h2>
-      <p>Якщо ви оновлюєте плагін — просто замініть старі <code>.dll</code> та <code>.addin</code> файла у тій же папці.</p>
-    </section>
-
-    <p><a class="btn" href="../index.html">⬅ Назад до сторінки плагіна</a></p>
+      <section>
+        <h2>Note</h2>
+        <p>If updating the plugin, simply replace the old <code>.dll</code> and <code>.addin</code> files in the same folder.</p>
+      </section>
+    </div>
   </main>
 
   <footer>
-    <p>© 2025 VP-Hub</p>
+    <div class="container">
+      <p>© 2025 VP-Hub</p>
+    </div>
   </footer>
 </body>
 </html>
