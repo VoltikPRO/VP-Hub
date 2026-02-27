@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>VP-Hub – Revit Plugins</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="VP-Hub — curated installers for Autodesk Revit plugins by Volodymyr Davydovych (Lightning Protection, DCF and more). Safe releases, clear docs, and support." />
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
   <header>
@@ -25,20 +26,35 @@
             <h2>LP Revit Plugin</h2>
             <p>Lightning protection calculation</p>
 
+            <!-- Meta (заповни поля за потреби) -->
+            <ul class="meta">
+              <li><strong>Version:</strong> v2.3.2</li>
+              <li><strong>Updated:</strong> TBD</li>
+              <li><strong>Revit:</strong> 2024</li>
+              <li><strong>OS:</strong> Windows 10/11 (x64)</li>
+            </ul>
+
             <div class="plugin-buttons">
               <a class="btn" href="plugins/vp-revit-plugin/">Details</a>
               <a class="btn" href="https://github.com/VoltikPRO/lp-revit-plugin-release/releases/download/v2.3.2/LPInstaller.msi">
                 Download v.2.3.2
               </a>
 
-              <!-- DOWNLOAD COUNTER — праворуч від кнопки -->
-              <span class="download-counter-badge" title="Total downloads">
+              <!-- DOWNLOAD COUNTER — праворуч від кнопки (клікабельний) -->
+              <a class="download-counter-badge" href="https://github.com/VoltikPRO/lp-revit-plugin-release/releases" target="_blank" rel="noopener noreferrer" title="Total downloads">
                 <img
                   src="https://img.shields.io/github/downloads/VoltikPRO/lp-revit-plugin-release/total.svg?style=flat-square"
                   alt="Total downloads for LP Revit Plugin"
                   loading="lazy">
-              </span>
+              </a>
             </div>
+
+            <!-- Довіра / додаткові посилання -->
+            <p class="aux">
+              <a href="https://github.com/VoltikPRO/lp-revit-plugin-release/releases/tag/v2.3.2" target="_blank" rel="noopener noreferrer">Release notes</a>
+              •
+              <a href="plugins/vp-revit-plugin/sha256.txt" target="_blank" rel="noopener noreferrer">Verify SHA256</a>
+            </p>
           </div>
         </div>
 
@@ -48,8 +64,16 @@
           <div class="plugin-info">
             <h2>CC Revit Plugin</h2>
             <p>Collision Check</p>
+
+            <ul class="meta">
+              <li><strong>Status:</strong> Coming soon</li>
+              <li><strong>Revit:</strong> TBD</li>
+            </ul>
+
             <div class="plugin-buttons">
-              <span class="btn disabled">Coming Soon</span>
+              <span class="btn disabled" aria-disabled="true">Coming Soon</span>
+              <!-- (Опційно) кнопку "Notify me" закоментовано, розкоментуй якщо треба -->
+              <!-- <a class="btn btn-secondary" href="mailto:you@example.com?subject=Notify%20me%20about%20CC%20Revit%20Plugin">Notify me</a> -->
             </div>
           </div>
         </div>
@@ -60,18 +84,32 @@
           <div class="plugin-info">
             <h2>DCF Revit Plugin</h2>
             <p>Direct Connection Finder</p>
+
+            <ul class="meta">
+              <li><strong>Version:</strong> v1.0.0.0</li>
+              <li><strong>Updated:</strong> TBD</li>
+              <li><strong>Revit:</strong> TBD</li>
+              <li><strong>OS:</strong> Windows 10/11 (x64)</li>
+            </ul>
+
             <div class="plugin-buttons">
               <a class="btn" href="plugins/dcf-revit-plugin/">Details</a>
-              <a class="btn" href="https://github.com/VoltikPRO/DCF/releases/download/v1.0.0.0/DCFInstaller.msi">Download</a>
+              <a class="btn" href="https://github.com/VoltikPRO/DCF/releases/download/v1.0.0.0/DCFInstaller.msi">Download v.1.0.0.0</a>
 
-              <!-- DOWNLOAD COUNTER — праворуч від кнопки -->
-              <span class="download-counter-badge" title="Total downloads">
+              <!-- DOWNLOAD COUNTER — праворуч від кнопки (клікабельний) -->
+              <a class="download-counter-badge" href="https://github.com/VoltikPRO/DCF/releases" target="_blank" rel="noopener noreferrer" title="Total downloads">
                 <img
                   src="https://img.shields.io/github/downloads/VoltikPRO/DCF/total.svg?style=flat-square"
                   alt="Total downloads for DCF Revit Plugin"
                   loading="lazy">
-              </span>
+              </a>
             </div>
+
+            <p class="aux">
+              <a href="https://github.com/VoltikPRO/DCF/releases" target="_blank" rel="noopener noreferrer">Release notes</a>
+              •
+              <a href="plugins/dcf-revit-plugin/sha256.txt" target="_blank" rel="noopener noreferrer">Verify SHA256</a>
+            </p>
           </div>
         </div>
 
