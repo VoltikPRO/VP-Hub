@@ -18,32 +18,73 @@
 
   <main>
     <div class="container">
+
       <section>
-        <h2>Workflow</h2>
+        <h2>Step-by-Step Workflow</h2>
+
+        <h3>Step 1. Preparing Lightning Rods (Masts)</h3>
+        <p>Before starting, make sure lightning rods exist in the model:</p>
+        <ul>
+          <li>Load a family containing lightning masts, or</li>
+          <li>Use masts that are already present in the project.</li>
+        </ul>
+
+        <hr>
+
+        <h3>Step 2. Defining Masts for Calculation</h3>
         <ol>
-          <li>Save your project and make sure the worksets are not locked by other users.</li>
-          <li>
-            Select the <b>Rod instance</b> that should be included in the calculation and press  
-            the <b>“Include Lightning Rod”</b> button to add them.
-          </li>
-          <li>
-            Choose an appropriate <b>Mesh</b> type (radius) from the list.  
-            <em>Note: If the family is missing in your project, it will be imported automatically.</em>
-          </li>
-          <li>Run the calculation. It may take about <b>2–5 minutes</b> to complete.</li>
+          <li>Select one or more mast types in the project.</li>
+          <li>Click the <b>“Include Lightning Rod”</b> button (folder icon).</li>
         </ol>
-        <p>✅ Done. The corresponding Mesh elements will be generated between the mast tops.</p>
+        <p>After this step, the plugin clearly understands which elements should be treated as lightning rods.</p>
+
+        <hr>
+
+        <h3>Step 3. Selecting Areas for Calculation</h3>
+        <p>Select the areas that contain masts for which the lightning protection zone should be calculated.</p>
+        <p><em>Note: Selecting other categories does not affect the result.</em></p>
+
+        <hr>
+
+        <h3>Step 4. Running the Calculation</h3>
+        <ol>
+          <li>Click <b>“Perform Calculation”</b>.</li>
+          <li>Wait until the process finishes.</li>
+        </ol>
+        <p><b>Recommendation:</b> If you have more than <b>200 masts</b>, run calculations in smaller groups for improved stability.</p>
+
+        <p>✅ <b>Result:</b> the lightning protection zone is created.</p>
+
+        <hr>
+
+        <h3>Optional: Creating an Alternative Zone with Safety Margin</h3>
+        <ol>
+          <li>Select already generated protection zones.</li>
+          <li>Click <b>“Safety Zone Mesh”</b>.</li>
+        </ol>
+        <p>✅ This secondary mesh helps verify protection coverage with additional safety margin.</p>
       </section>
 
       <section>
-        <h2>Notes</h2>
+        <h2>Managing Results</h2>
+
+        <h3>Locking Desired Results</h3>
+        <p>If the generated zones look correct, it is recommended to <b>Pin</b> them to protect against accidental changes.</p>
+
+        <h3>Clearing Unnecessary Results</h3>
+        <p>Remove unwanted or intermediate geometry using <b>“Clear Calculation Results”</b>.</p>
+
+        <h3>Viewing Current Model Status</h3>
+        <p>Click <b>“View Calculation Result”</b> to see:</p>
         <ul>
-          <li>If something looks wrong, use <b>Current Calculation Result</b> to identify potential issues.</li>
-          <li>If you encounter a bug, go to <b>About</b> and leave your feedback.</li>
+          <li>current calculation status,</li>
+          <li>a complete list of plugin-related elements in the model.</li>
         </ul>
+        <p>This allows checking the model without rerunning calculations.</p>
       </section>
 
       <p>Enjoy using the plugin!<br>Thank you.</p>
+
     </div>
   </main>
 
