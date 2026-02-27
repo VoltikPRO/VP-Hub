@@ -166,9 +166,10 @@ main {
   }
 }
 
-/* Перенесення кнопок Details + Download на новий рядок */
 .plugin-footer {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: column;     /* ← ГОЛОВНЕ */
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 10px;
 }
