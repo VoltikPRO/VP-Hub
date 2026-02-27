@@ -28,14 +28,13 @@ header, footer {
 header .container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* заголовок і підзаголовок по центру */
+  align-items: center;
 }
 
-/* Home button контейнер */
 .header-top {
   width: 100%;
   display: flex;
-  justify-content: flex-start; /* кнопка Home зліва */
+  justify-content: flex-start;
   margin-bottom: 10px;
 }
 
@@ -201,6 +200,25 @@ iframe {
 
 .plugin-buttons {
   margin-top: 12px;
-  display: flex;
+  display: inline-flex;
+  align-items: center;
   gap: 12px;
 }
+
+/* DOWNLOAD COUNTER badge styles */
+.download-counter-badge {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 6px 10px;
+  background: #000;        /* стиль як у кнопок */
+  color: #fff;
+  border-radius: 8px;
+  line-height: 1;
+}
+
+.download-counter-badge img {
+  height: 18px;
+  display: block;
+}
+``
